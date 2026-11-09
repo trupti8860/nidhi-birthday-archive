@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eaf3fa" />
+  <meta name="description" content="A highly confidential collection of extremely important things, made especially for Nidhi." />
+  <title>Nidhi's Archive — Extremely Important Things</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Quicksand:wght@500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <div id="welcome" class="welcome-screen">
+    <div class="welcome-sparkle sparkle-one">✳</div>
+    <div class="welcome-sparkle sparkle-two">✦</div>
+    <div class="welcome-sparkle sparkle-three">♡</div>
+    <div class="welcome-card">
+      <div class="welcome-topline"><span class="mini-dot"></span> ARCHIVE OS <span class="topline-version">EDITION 19.0</span></div>
+      <div class="welcome-illustration" aria-hidden="true">
+        <div class="welcome-cloud cloud-left"></div>
+        <div class="welcome-cloud cloud-right"></div>
+        <div class="welcome-folder"><span>♡</span></div>
+        <span class="orbit orbit-a">✦</span><span class="orbit orbit-b">✿</span><span class="orbit orbit-c">✧</span>
+      </div>
+      <p class="eyebrow">A VERY IMPORTANT PERSON DETECTED</p>
+      <h1>Psst... <em>Nidhiiiii.</em><br>This one's yours.</h1>
+      <p class="welcome-copy">A highly confidential collection of things that are absolutely none of your business. Except yours. A little evidence, a few old memories, your future plans and a frankly unreasonable amount of affection.</p>
+      <div class="welcome-stamp">TOP SECRET<br><small>FOR YOUR EYES ONLY</small></div>
+      <button id="enterArchive" class="primary-button">OPEN YOUR BIRTHDAY ARCHIVE <span>↗</span></button>
+      <p class="welcome-footnote">made for Nidhi · 30.11.2026 · open with curiosity</p>
+    </div>
+    <div class="welcome-bottom">MADE WITH ♡, A LITTLE CHAOS & TOO MANY THOUGHTS</div>
+  </div>
+
+  <main id="desktop" class="desktop hidden">
+    <header class="desktop-header">
+      <div class="brand"><span class="brand-mark">✿</span><span>NIDHI'S ARCHIVE</span><span class="brand-divider">/</span><span class="brand-sub">PRIVATE COLLECTION</span></div>
+      <div class="system-status"><span class="online-dot"></span> SYSTEM ONLINE <span class="status-divider">•</span> <span id="clock">00:00</span></div>
+    </header>
+
+    <div class="desktop-note note-top">
+      <span class="tape"></span>
+      <span class="note-label">A NOTE FROM THE ARCHIVIST</span>
+      <p>Dear Nidhiiiii,<br>your life is already a full drama series.<br>I just made the archive.</p>
+      <span class="note-heart">♡</span>
+    </div>
+
+    <button class="desktop-sticker sticker-flower secret-hotspot" data-secret="0" aria-label="Hidden flower note">✿</button>
+    <button class="desktop-sticker sticker-star secret-hotspot" data-secret="2" aria-label="Hidden star note">✦</button>
+    <button class="desktop-sticker sticker-bow secret-hotspot" data-secret="1" aria-label="Hidden bow note">୨୧</button>
+    <button class="desktop-sticker sticker-cherry secret-hotspot" data-secret="3" aria-label="Hidden cherry note">☻</button>
+
+    <section class="desktop-center">
+      <div class="desktop-heading">
+        <span class="eyebrow">YOUR PERSONAL DIGITAL STORAGE UNIT</span>
+        <h2>Nineteen looks good<br><em>on you, Nidhiiiii.</em></h2>
+        <p>A little bit of our history, a lot of your personality, and absolutely no boring files.</p>
+        <div class="birthday-chip"><span>✦</span> 30 NOVEMBER · CHAPTER 19 <span>✦</span></div>
+        <div class="birthday-countdown" id="birthdayCountdown">COUNTING DOWN TO YOUR DAY ♡</div>
+      </div>
+      <div class="icon-grid" id="iconGrid">
+        <button class="desktop-icon" data-window="readme"><span class="folder-icon folder-pink"><i>♡</i></span><span>READ_ME_FIRST</span></button>
+        <button class="desktop-icon" data-window="dossier"><span class="folder-icon folder-lilac"><i>✿</i></span><span>BIRTHDAY_DOSSIER</span></button>
+        <button class="desktop-icon" data-window="evidence"><span class="folder-icon folder-yellow"><i>✦</i></span><span>EVIDENCE_LOCKER</span></button>
+        <button class="desktop-icon" data-window="compliments"><span class="app-icon app-heart">♡</span><span>COMPLIMENTS.exe</span></button>
+        <button class="desktop-icon" data-window="memories"><span class="folder-icon folder-sage"><i>⌁</i></span><span>MEMORY_LOGS</span></button>
+        <button class="desktop-icon" data-window="future"><span class="app-icon app-crystal">✧</span><span>FUTURE_PREDICTIONS</span></button>
+        <button class="desktop-icon" data-window="secret"><span class="folder-icon folder-peach"><i>🔒</i></span><span>SECRET_STASH</span></button>
+        <button class="desktop-icon" data-window="final"><span class="app-icon app-letter">✉</span><span>THE_FINAL_FILE</span></button>
+        <button class="desktop-icon" data-window="cake"><span class="app-icon app-crystal">🎂</span><span>BIRTHDAY_CAKE.exe</span></button>
+      </div>
+    </section>
+
+    <div class="desktop-side-note">
+      <span class="side-note-icon">✧</span>
+      <strong>tiny reminder</strong>
+      <p>30 November 2026 · Chapter 19 begins. You are allowed to be dramatic about it.</p>
+    </div>
+
+    <button class="desktop-sticker sticker-envelope secret-hotspot" data-secret="4" aria-label="Hidden envelope note">✉</button>
+
+    <div class="desktop-bottom-left">
+      <div class="achievement-counter"><span>✧</span> <b id="secretCount">0</b>/5 secrets found</div>
+    </div>
+
+    <nav class="dock" aria-label="Desktop dock">
+      <button class="dock-home" id="homeButton" title="Back to desktop">✿</button>
+      <span class="dock-separator"></span>
+      <button class="dock-app" data-window="readme" title="Read me">▤</button>
+      <button class="dock-app" data-window="compliments" title="Compliments">♡</button>
+      <button class="dock-app" data-window="memories" title="Memory logs">⌁</button>
+      <button class="dock-app" data-window="secret" title="Secret stash">✧</button>
+      <span class="dock-separator"></span>
+      <button class="dock-trash" id="trashButton" title="Recycle bin">♧</button>
+    </nav>
+
+    <div id="windowLayer" class="window-layer"></div>
+
+    <div id="toast" class="toast" role="status"></div>
+    <div id="mascot" class="mascot" title="Psst... click me!">
+      <span class="mascot-face">૮ ˶ᵔ ᵕ ᵔ˶ ა</span><span class="mascot-label">click for a secret</span>
+    </div>
+
+    <div class="mobile-hint">✿ Tap any folder to explore your archive ✿</div>
+  </main>
+
+  <div id="confettiLayer" class="confetti-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
